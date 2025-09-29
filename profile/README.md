@@ -7,6 +7,10 @@ Just as we expect physical security and privacy around the clock, why not aim fo
 digital world? Digital security and privacy should be foundational rights, not afterthoughts, and
 not just for enterprise solutions.
 
+🌐 [Read the Blog](https://www.forgeyourlab.com)
+
+<br />
+
 ## The Homelab Arc (Infra → Resilience)
 
 <!-- Own your infra → Control identity → Enforce least privilege → Protect data → Prove resilience. -->
@@ -17,7 +21,7 @@ not just for enterprise solutions.
 - Run Pi-hole/AdGuard + Unbound for DNS (with DoH).
 - Use an authoritative DNS server for internal services.
 - Enforce VLAN segmentation, strict firewall, and access point policies.
-- Maintain secure provision/deployment pipelines. {{< /collapse >}}
+- Maintain secure provision/deployment pipelines.
 
 ###  Control identity
 
@@ -25,7 +29,7 @@ not just for enterprise solutions.
 - Use root & intermediate CAs as trust anchors.
 - Automate certificate issuance/renewal for all internal services (DNS-ACME).
 - Enforce mTLS between clients, reverse proxy, and services.
-- Harden clients (browsers, etc.) to reject untrusted services. {{< /collapse >}}
+- Harden clients (browsers, etc.) to reject untrusted services.
 
 ### Enforce least privilege
 
@@ -33,18 +37,18 @@ not just for enterprise solutions.
 - Provision hardened servers with minimal packages, SSH hardening, fail2ban, strict sudo/user
   policies.
 - Secure containers using seccomp & AppArmor profiles, segmented networks, restricted Docker
-  defaults. {{< /collapse >}}
+  defaults.
 
 ### Protect data
 
 - Use encrypted OS and service storage (with LUKS).
 - Encrypted RAID NAS for regular backups.
-- Automate offline/offsite backup copies (encrypted, immutable and versioned). {{< /collapse >}}
+- Automate offline/offsite backup copies (encrypted, immutable and versioned).
 
 ### Prove resilience
 
 - Aggregate centralized logging, metrics, and alerting.
-- Run periodic storm and restore drills. {{< /collapse >}}
+- Run periodic storm and restore drills.
 
 <br />
 
